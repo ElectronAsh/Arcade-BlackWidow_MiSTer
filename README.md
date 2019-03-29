@@ -1,10 +1,11 @@
 # Black Widow
 
-FPGA implementation of Atari Black Widow by http://spritesmods.com/?art=bwidow_fpga with help from james10952001 
+FPGA implementation of [Atari Black Widow](http://spritesmods.com/?art=bwidow_fpga) by Jeroen Domburg with help from james10952001 
 Rasterizer by Dave Woo and fpgaarcade.com
 Port to MiSTer by Alan Steremberg
 
-The original Sprint game had a steering wheel with a quadrature encoder. This version implements a converter from the digital joystick inputs.
+This game used two joysticks. If you hook it to an ipac/jpac style adapter, it will use joystick 1 and 2. You can use the MiSTer OSD to
+map the joystick buttons for the second joystick to the digital buttons on the gamepad.
 
 # Keyboard inputs :
 ```
