@@ -58,7 +58,7 @@ library ieee;
   use ieee.std_logic_arith.all;
   use ieee.std_logic_unsigned.all;
 
-entity ASTEROIDS_TOP is
+entity BWIDOW_TOP is
   port (
     BUTTON            : in std_logic_vector(14 downto 0); -- active low
 	 
@@ -96,7 +96,7 @@ entity ASTEROIDS_TOP is
     );
 end;
 
-architecture RTL of ASTEROIDS_TOP is
+architecture RTL of BWIDOW_TOP is
 
 	signal RAM_ADDR_A        :   std_logic_vector(18 downto 0);
    signal RAM_ADDR_B        :   std_logic_vector(15 downto 0); -- same as above
@@ -179,29 +179,8 @@ begin
 		dn_wr=>dn_wr
 	);
 	
---  u_asteroids : entity work.ASTEROIDS
---    port map (
---	   SELF_TEST_SWITCH_L => SELF_TEST_SWITCH_L,
---      BUTTON            => BUTTON,
---     -- LANG					=> LANG,
---	--	SHIPS					=> SHIPS,
---      AUDIO_OUT         => AUDIO_OUT,
---
---      X_VECTOR          => x_vector,
---      Y_VECTOR          => y_vector,
---      Z_VECTOR          => z_vector,
---      BEAM_ON           => beam_on,
---      BEAM_ENA          => beam_ena,
---      --
---      RESET_6_L         => reset_6_l,
---      CLK_6             => clk_6,
---		clk_25				=> clk_25,
---		dn_addr          	=> dn_addr, 
---		dn_data         	=> dn_data,
---		dn_wr					=> dn_wr				
---      );
 
-  u_DW : entity work.ASTEROIDS_DW
+  u_DW : entity work.BWIDOW_DW 
     port map (
       RESET            => reset_6,
 		clk_25				=> clk_25,

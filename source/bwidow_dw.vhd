@@ -55,7 +55,7 @@ library ieee;
 
 --use work.pkg_asteroids.all;
 
-entity ASTEROIDS_DW is
+entity BWIDOW_DW is
   port (
     RESET            : in    std_logic;
 	 clk_25           : in    std_logic;
@@ -80,7 +80,7 @@ entity ASTEROIDS_DW is
     );
 end;
 
-architecture RTL of ASTEROIDS_DW is
+architecture RTL of BWIDOW_DW is
   -- types & constants
   subtype  Bus12    is std_logic_vector (11 downto 0);
 

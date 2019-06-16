@@ -361,7 +361,7 @@ wire [1:0] lang = 2'b00;
 wire [1:0] ships = 2'b00;
 wire vgade;
 
-ASTEROIDS_TOP ASTEROIDS_TOP
+BWIDOW_TOP BWIDOW_TOP
 (
 
 	.BUTTON(BUTTONS),
